@@ -5,7 +5,8 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
-import { dataSet } from './photographyContent.js'
+import { dataSet } from './photographyContent.js';
+import ProfileImage from '_public/images/mainImage.jpg';
 import './style.scss';
 
 class Content extends React.Component {
@@ -25,7 +26,7 @@ class Content extends React.Component {
             </p>
           </div>
           <div className="col-sm-6 profileImageContainer">
-            <img src="images/mainImage.jpg" className="profileImage" />
+            <img src={ProfileImage} className="profileImage" />
           </div>
         </div>
         <div className="content-intro photography">
