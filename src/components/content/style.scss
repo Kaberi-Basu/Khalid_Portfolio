@@ -1,0 +1,44 @@
+.content-intro {
+  background-color: #e7e7e7;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  -moz-box-shadow: 0px 0px 6px 6px #e7e7e7;
+  -webkit-box-shadow: 0px 0px 6px 6px #e7e7e7;
+  box-shadow: 0px 0px 6px 6px #e7e7e7;
+  margin-top: 80px;
+  font-family: 'Uchen';
+  height: 'auto';
+  padding: 20px;
+}
+.introContainer {
+  text-align: left;
+  p {
+    font-size: 12px;
+  }
+}
+.photography {
+  flex-direction: column;
+}
+h1 {
+  font-weight: 500;
+}
+.profileImageContainer:before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -moz-box-shadow: inset 0px 0px 6px 6px #e7e7e7;
+  -webkit-box-shadow: inset 0px 0px 6px 6px #e7e7e7;
+  box-shadow: inset 0px 0px 6px 6px #e7e7e7;
+}
+
+.profileImageContainer {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.profileImage {
+  max-width: 100%;
+}
