@@ -10,6 +10,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '/public/index.html'), // to import index.html file inside index.js
+      favicon: path.join(__dirname, '/public/favicon.ico'),
     }),
   ],
   devServer: {
@@ -40,13 +41,25 @@ module.exports = {
         options: { limit: false },
       },
       {
+                        // To import SVG as a react component
+        test: /\.svg$/,
+        use: [{
+                            loader: require.resolve('babel-loader')
+                        },
+                        {
+                            loader: 'svg-react-loader'
+                        }
+                        ]
+      },
+      {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
             loader: 'file-loader',
           },
         ],
-      },
+        exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/, /\.svg$/],
+      }
     ],
   },
 };

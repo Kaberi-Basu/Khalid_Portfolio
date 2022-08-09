@@ -3,9 +3,7 @@ import CallIcon from '@mui/icons-material/Call';
 import ContactMailOutlinedIcon from '@mui/icons-material/ContactMailOutlined';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import './style.scss';
-// import IconInsta from '_public/images/icon-insta.svg'
-// import IconFb from '_public/images/icon-fb.svg'
-
+import { fbIcon, instaIcon } from './svgFiles';
 class Footer extends React.Component {
   render() {
     return (
@@ -24,19 +22,20 @@ class Footer extends React.Component {
               <ContactMailOutlinedIcon />
             </span>
             <span>
-              <u>kmohammad918@gmail.com</u>
+              <a href='mailto:kmohammad918@gmail.com' target='_blank'><u>kmohammad918@gmail.com</u></a>
             </span>
           </div>
         </div>
         <div className='col-sm-6 contact'>
           <div className='socialHandle'>
             <span>
-              {/* <IconFb /> */}
+              <a href="https://www.facebook.com/orionency" target="_blank"> {fbIcon} </a>
             </span>
-          </div>
-          <div className='socialHandle'>
             <span>
-              {/* <IconInsta /> */}
+              <a href="https://www.instagram.com/mr.khalid.0/" target="_blank"> {instaIcon} </a>
+            </span>
+            <span>
+              <a href="https://www.instagram.com/emkay_optiks/" target="_blank"> {instaIcon} </a>
             </span>
           </div>
         </div>

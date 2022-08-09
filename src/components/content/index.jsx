@@ -29,13 +29,13 @@ class Content extends React.Component {
             <img src={ProfileImage} className="profileImage" />
           </div>
         </div>
-        <div className="content-intro photography">
-          <div>
+        <div className="content-intro direction-column" id="photographyhobby">
+          <div className="margin-top-bottom">
             <h3>
               Photography
             </h3>
           </div>
-          <div>
+          <div className="margin-top-bottom">
             <h6>
               I am a great hobby photographer. I love to shoot anything irrespective of the subject. However, capturing the <i><u>landscapes and detailed macro shot</u></i> is my most favorite photography genre.
             </h6>
@@ -63,11 +63,14 @@ class Content extends React.Component {
             ))}
           </ImageList>
         </div>
-        <div className="content-intro martialArts">
+        <div className="content-intro direction-column" id="martialArtsHobby">
           <div>
             <h3>
               Martial Arts
             </h3>
+          </div>
+          <div>
+            I am a great fan of martial arts and I have practiced Wado-Kai Karate officially for around 1 year. But my scope for martial arts doesn’t end at karate only. I have practiced self-defense, Wushu, gymnastics, MMA and free running. There are some good memories that I had earlier.
           </div>
         </div>
       </React.Fragment>

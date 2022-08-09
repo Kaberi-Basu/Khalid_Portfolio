@@ -11,18 +11,23 @@
   height: 'auto';
   padding: 20px;
 }
+
 .introContainer {
   text-align: left;
+
   p {
     font-size: 12px;
   }
 }
-.photography {
+
+.direction-column {
   flex-direction: column;
 }
+
 h1 {
   font-weight: 500;
 }
+
 .profileImageContainer:before {
   display: block;
   content: '';
@@ -41,4 +46,9 @@ h1 {
 
 .profileImage {
   max-width: 100%;
+}
+
+.margin-top-bottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
